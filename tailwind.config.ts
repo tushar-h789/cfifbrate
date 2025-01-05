@@ -11,6 +11,18 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary_bg: "#E5CC0C",
+        secondary_bg: "#F5F3E0",
+        primary_text: "#F0FBFB",
+        secondary_text: "#070707",
+        paragraph_text: "#4A4C56",
+      },
+      fontFamily: {
+        hind: ["Hanno Test", "Hind"], 
+        mono: ["Geist Mono", "monospace"],
+      },
+      screens: {
+        '2xl': '1420px', 
       },
     },
   },
