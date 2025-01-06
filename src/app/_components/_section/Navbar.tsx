@@ -37,11 +37,11 @@ export default function Navbar() {
 
         {/* Text Over Video Section */}
         <div className="absolute top-1/2 left-0 w-full transform -translate-y-1/2 px-4">
-          <div className="container mx-auto text-center md:text-left">
-            <h2 className="text-4xl sm:text-5xl md:text-7xl lg:text-9xl font-bold font-hind text-white leading-snug">
+          <div className="container mx-auto text-left ">
+            <h2 className="text-7xl lg:text-9xl font-bold font-hind text-white">
               The <br className="" /> Experience
             </h2>
-            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl uppercase text-primary_text bg-secondary_text mt-6 md:mt-10 mx-auto md:mx-0 px-4 py-2 rounded-md inline-block leading-relaxed">
+            <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl uppercase text-primary_text bg-secondary_text mt-6 md:mt-10 mx-auto md:mx-0 px-4 py-2 rounded-md leading-relaxed font-hind font-semibold hidden lg:block w-[500px]">
               An Immersive Discovery <br className="hidden lg:block" /> of The
               Pearl DC!
             </p>
@@ -54,13 +54,13 @@ export default function Navbar() {
             {/* Logo Section */}
             <div>
               <Link href="/" aria-label="Homepage">
-                <Image src={logo} width={100} alt="CFIFBRATE Logo" />
+                <Image src={logo} width={186} alt="CFIFBRATE Logo" />
               </Link>
             </div>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex">
-              <ul className="flex items-center gap-7 font-sans font-medium text-lg lg:text-2xl text-primary_text">
+              <ul className="flex items-center gap-9 font-hind font-medium text-lg lg:text-[22px] leading-6 text-primary_text">
                 {navItems.map((item, index) => (
                   <li
                     key={index}
@@ -70,6 +70,7 @@ export default function Navbar() {
                   </li>
                 ))}
               </ul>
+             
             </div>
 
             {/* Mobile Menu Icon */}

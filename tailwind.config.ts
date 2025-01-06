@@ -18,7 +18,8 @@ export default {
         paragraph_text: "#4A4C56",
       },
       fontFamily: {
-        hind: ["Hanno Test", "Hind"], 
+        hind: ["Hind", "sans-serif"],
+        hanno: ["Hanno Test"],
         mono: ["Geist Mono", "monospace"],
       },
       screens: {

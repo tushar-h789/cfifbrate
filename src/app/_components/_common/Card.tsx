@@ -11,7 +11,7 @@ interface CardData {
 
 export default function Card({ image, title, description, button }: CardData) {
   return (
-    <div className="w-[337px] font-hind mx-auto">
+    <div className="w-[337px]">
       {/* Image Section (No rounding at bottom) */}
       <div className="overflow-hidden rounded-t-xl">
         <Image src={image} width={337} height={200} alt="card image" className="object-cover" />
@@ -19,8 +19,8 @@ export default function Card({ image, title, description, button }: CardData) {
 
       {/* Content Section (Rounded bottom corners only) */}
       <div className="bg-white p-5 rounded-b-xl">
-        <h2 className="text-2xl font-semibold my-6">{title}</h2>
-        <p className="font-normal text-base text-paragraph_text">{description}</p>
+        <h2 className="my-6 font-hind text-2xl font-normal leading-6 mx-auto">{title}</h2>
+        <p className="font-hind font-normal text-base text-paragraph_text ">{description}</p>
 
         <div className="flex items-center gap-2 mt-6">
           <p className="text-paragraph_text border-b border-paragraph_text cursor-pointer hover:text-primary_bg">

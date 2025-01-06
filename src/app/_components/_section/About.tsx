@@ -1,15 +1,24 @@
 import React from "react";
 import SpecialtiesCard from "../SpecialtiesCard";
 import Curators from "./Curators";
+import aboutBg from '../../../../public/about-bg.png'
+// import aboutBg02 from '../../../../public/about-bg02.png'
 
 export default function About() {
   return (
-    <section className="mt-20">
+    <section className="mt-20"
+      style={{
+        backgroundImage: `url(${aboutBg.src})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        
+      }}
+    >
       <div className="container px-4 lg:px-0">
-        <h2 className="font-hind font-semibold text-5xl text-secondary_text text-center">
+        <h2 className="font-hind font-normal text-5xl text-secondary_text text-center">
           About
         </h2>
-        <p className="max-w-[768px] font-hind text-xl text-paragraph_text mx-auto my-4">
+        <p className="max-w-[768px] font-hind text-xl text-paragraph_text mx-auto my-4 leading-7">
           Our team is a powerhouse of passionate strategists, event architects,
           and ecosystem builders with over 75 years of combined experience in
           making bold visions come to life. We bring a deep commitment to
@@ -17,7 +26,7 @@ export default function About() {
           driving meaningful impact through every project we touch.
         </p>
         <div className="mt-12 mb-5">
-          <h3 className="text-secondary_text font-hind text-3xl font-bold leading-tight text-center">
+          <h3 className="text-secondary_text font-hind text-[32px] font-bold   leading-tight text-center mb-12">
             Our Specialties
           </h3>
           <div className="grid grid-cols-1 lg:grid-cols-4 mt-6 gap-5">

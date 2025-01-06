@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { useState, useEffect } from "react";
 import Card from "../_common/Card";
@@ -7,6 +7,7 @@ import cardTwo from "../../../../public/feature-02.png";
 import cardThree from "../../../../public/feature-03.png";
 import cardFour from "../../../../public/feature-04.png";
 import useEmblaCarousel from "embla-carousel-react";
+import Button from "../_common/Button";
 
 export default function Featured() {
   const [viewportRef] = useEmblaCarousel({ loop: true });
@@ -18,7 +19,7 @@ export default function Featured() {
   };
 
   useEffect(() => {
-    handleResize(); 
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
@@ -61,11 +62,11 @@ export default function Featured() {
       <div className="container">
         <div className="pb-8">
           {/* Title Section */}
-          <h2 className="text-secondary_text text-center font-bold text-4xl md:text-5xl">
+          <h2 className="font-hind text-secondary_text text-center font-bold text-4xl md:text-5xl ">
             Featured Collaborators
           </h2>
 
-          <div className="text-secondary_text text-lg leading-relaxed pt-4 rounded-xl">
+          <div className="font-hind text-secondary_text text-xl  leading-relaxed pt-4 rounded-xl">
             <p className="text-center">
               Discover a carefully curated selection of small businesses,
               creatives, and founders,
@@ -104,6 +105,10 @@ export default function Featured() {
               ))}
             </div>
           )}
+
+          <div className="text-center my-10 mb-24">
+            <Button title="View All" />
+          </div>
         </div>
       </div>
     </section>

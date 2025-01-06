@@ -8,7 +8,7 @@ import curatorsFour from "../../../../public/curators-04.png";
 export default function Curators() {
   return (
     <section className="container">
-      <h2 className="font-semibold text-secondary_text font-hind leading-10 mx-auto text-center text-4xl mt-20">
+      <h2 className="font-semibold text-secondary_text font-hind leading-10 mx-auto text-center text-4xl mt-20 mb-12">
         The Curators
       </h2>
 
