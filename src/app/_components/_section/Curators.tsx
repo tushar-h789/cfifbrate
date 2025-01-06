@@ -8,11 +8,11 @@ import curatorsFour from "../../../../public/curators-04.png";
 export default function Curators() {
   return (
     <section className="container">
-      <h2 className="font-semibold text-secondary_text font-hind leading-10 mx-auto text-center text-4xl mt-10">
+      <h2 className="font-semibold text-secondary_text font-hind leading-10 mx-auto text-center text-4xl mt-20">
         The Curators
       </h2>
 
-      <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 lg:gap-0  my-20">
+      <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 lg:gap-0 mt-5 lg:mt-0 lg:my-20 mx-4">
         <CursatoreCard
           image={curatorsOne}
           title="Ayanna Smith"

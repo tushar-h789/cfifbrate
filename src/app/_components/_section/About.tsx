@@ -46,7 +46,7 @@ Leadership"
       </div>
 
       {/* The Curators */}
-      <Curators/>
+      <Curators />
     </section>
   );
 }

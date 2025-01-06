@@ -63,7 +63,7 @@ export default function Celebrate() {
             </p>
             <div className="relative flex items-center w-full text-center mt-10">
               <Button title="Join the Waitlist " className="w-60 mx-auto" />
-              <RightArrow className="w-10 absolute right-[168px]"/>
+              <RightArrow className="w-10 absolute right-4 lg:right-[168px]"/>
             </div>
           </div>
         </div>

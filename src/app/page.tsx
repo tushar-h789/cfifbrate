@@ -1,3 +1,4 @@
+import Footer from "./_components/_common/Footer";
 import About from "./_components/_section/About";
 import Celebrate from "./_components/_section/Celebrate";
 import Featured from "./_components/_section/Featured";
@@ -12,6 +13,7 @@ export default function Home() {
       <Featured/>
       <About/>
       <Partners/>
+      <Footer/>
     </div>
   );
 }
