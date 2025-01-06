@@ -106,7 +106,7 @@ export default function Featured() {
             </div>
           )}
 
-          <div className="text-center my-10 mb-24">
+          <div className="text-center my-10 mb-24 hidden lg:block">
             <Button title="View All" />
           </div>
         </div>
